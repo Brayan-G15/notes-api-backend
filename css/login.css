@@ -1,0 +1,224 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+
+}
+
+html{
+    background-color: #010f24;
+    font-family:sans-serif;
+    line-height:1.15;
+    -webkit-text-size-adjust:100%;
+    -webkit-tap-highlight-color:rgba(0,0,0,0)
+}
+
+body{
+    background-color: #010f24;
+    margin:0;
+    /* font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji; */
+    font-size:1rem;
+    font-weight:400;
+    line-height:1.5;color:#212529;
+    text-align:left;
+    /* background-color:#fff */
+}
+
+
+.btn-idiomas {
+    position: relative;
+    align: right;
+}
+
+.login {
+    width: 300px;
+}
+
+.form {
+    height: 100%;
+    display: block;
+    margin-top: 0em;
+
+}
+
+label {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: left;
+    width: 100%;
+    color: #fff
+}
+
+#date-email{
+    display: block;
+}
+
+
+
+.main-container {
+    display: flex;
+    width: 60%;
+
+    height: 50%;
+    justify-content: space-evenly;
+}
+
+
+
+.svg {
+    width: 100%;
+    height: 100%;
+}
+
+
+.container{
+    width: 100%;
+    height: 650px;
+    padding-bottom: 0;
+    position: relative;
+    background-color: #010f24;
+
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container .login .cadastrar p {
+    color: #fff;
+    font-weight: 300;
+}
+
+.title {
+   
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 26px;
+    text-align: center;
+}
+
+.login .form .datos .contenido input{
+    width: 100%;
+    height: 35px;
+    margin: 0;
+    padding: 0.5rem 0.5rem;
+    background-color: #fff;
+    border: 1px solid #adadad;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 2px;
+    margin-top: 26px;
+}
+
+.login .form .remember {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.login .form .remember .r {
+    color: goldenrod;
+    position: relative;
+    top: 5px;
+    text-decoration: none;
+}
+
+#button-iniciar {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    background: #c7990e;
+    color: #fff;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-radius: 8px;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+
+.login .cadastrar .registro {
+    font-size: 18px;
+    text-decoration: none;
+    color: goldenrod;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #010f24;
+}
+
+.text-footer {
+    font-size: 1rem;
+
+    color: #c7990e;
+    text-align: center;
+    position: relative;
+    float: left;
+    padding: 0 10px;
+
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.footer span {
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+
+}
+
+@media (max-width: 400px) {
+    .container-logo {
+        display: none;
+    }
+    .main-container {
+        width: 80%;
+    }
+    .login .contenido .title {
+        text-align: center;
+    }
+    .login {
+        width: 100%;
+    }
+   
+    .login .form .remember {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #button-iniciar {
+        width: 80%;
+        position: absolute;
+        bottom: 205px;
+    }
+    .cadastrar {
+        position: absolute;
+        bottom: 170px;
+    }
+    .footer{
+        justify-content: center;
+    }
+    .footer figure {
+        display: none;
+
+    }
+
+}
