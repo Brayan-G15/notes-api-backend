@@ -174,6 +174,12 @@ header {
 }
 .main-section span {
     font-weight: 400;
+    color: #21456c;
+}
+.main-section .overall-profit .benefits span {
+    position: relative;
+    top: 10px;
+    left: 10px;
 }
 
 .overall-profit {
@@ -198,7 +204,6 @@ header {
 }
 .benefits img {
     width: 40px;
-    margin-right: 25px;
     margin-left: 50px;
 }
 
@@ -324,11 +329,18 @@ header {
     .menuTopIcons span {
         top: 33px;
         left: 0;
+    
     }
+
+
     .app-slider {
         width: 95%;
         height: 150px;
         margin-top: -25px;
+    }
+    .menuTopIcons .app-navbar-icon img {
+        top: 12px;
+        left: 0;
     }
 
 
@@ -357,9 +369,11 @@ header {
         margin-top: 0;
         margin-right: 0;
     }
-    .main-section .benefits span {
+    .main-section .overall-profit .benefits span {
         font-size: 20px;
         margin-top: 5px;
+        position: relative;
+        top: 0;
     }
     
 
