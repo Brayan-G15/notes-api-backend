@@ -71,10 +71,6 @@ body {
     
 }
 
-
-
-
-
 /* menu top icon */
 .app-main-container {
     width: 80%;
@@ -138,7 +134,7 @@ body {
 
 
 
-
+/* main */
 .main {
     display: flex;
     justify-content: center;
@@ -151,24 +147,21 @@ body {
 
 .overall-profit {
     width: 100%;
-    
+    background-color: #f1f1f1;
     display: flex;
     justify-content: space-between;
+    border-bottom: 0.5rem solid #ffc117;
+    border-radius: 10px;
 }
 .deposit-terms {
     width: 40%;
-    text-align: center;
-    background-color: #FBFAFB;
-    border-radius: 10px;
-    border-bottom: 0.5rem solid #ffc117;
+    text-align: center; 
 }
 
 
 .input-deposit {
-    background-color: #FBFAFB;
     border-radius: 10px;
     width: 50%;
-    border-bottom: 0.5rem solid #ffc117;
 }
 .input-deposit .uploading-form {
     display: grid;
@@ -223,9 +216,8 @@ body {
     margin-top: 10px;
     margin-left: 38px;
     align-items: center;
+    margin-bottom: 15px;
 }
-
-
 
 
 .image-style {
@@ -279,11 +271,7 @@ body {
 }
 
 
-
-
-
-
-@media (max-width:400px) {
+@media (max-width:500px) {
     .header-container {
         display: block;
     }
@@ -305,7 +293,7 @@ body {
         right: 10px;
     }
 
-    
+    /* navbar */
     .main-container {
         padding-top: 40px;
     }
@@ -332,6 +320,8 @@ body {
         top: 12px;
         left: 0;
     }
+
+    /* main  */
     .main-section {
         
         width: 100%;
@@ -363,6 +353,8 @@ body {
         left: 298px;
         top: 5px;
     }
+
+    /* footer */
     .footer .footer-container .text-footer {
         font-size: 1rem;
     }
