@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | DigitalWorld</title>
-    <link rel="stylesheet" href="./css/login.css">
+    <title>Register | DigitalWorld</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <main>
@@ -44,30 +44,27 @@
                     </div>
                 </section>
                 <section class="login">
-                    <form class="form">
+                    <form class="form" action="/register" method="post">
                         <div class="datos">
                             <fieldset class="contenido">
-                                <label for="" class="title">SIGN IN TO YOUR ACCOUNT</label>
-                                <input type="text" placeholder="Enter Username" required="required" aria-required="true">
+                                <label for="name class="title">REGISTER</label>
+                                <input type="text" id="name" name="name" placeholder="Enter Complet Name" required="required" aria-required="true">
                             </fieldset>
                             <fieldset class="contenido">
-                               
-                                <input type="password" placeholder="Enter Password" required="required" aria-required="true">
+                                <label for="user"></label>
+                                <input type="text" id="user" name="user" placeholder="Enter Username" required="required" aria-required="true">
                             </fieldset>
-                        </div>
-                        <div class="remember">
-                            <fieldset>
-                                <input type="checkbox" id="">
-                                <label for="remenber" >Remember Me</label>
+                            <fieldset class="contenido">
+                                <label for="pass"></label>
+                                <input type="password" id="pass" name="pass" placeholder="Enter Password" required="required" aria-required="true">
                             </fieldset>
-                            <a href="" class="r">Forgot Password?</a>
                         </div>
                        
                         <fieldset>
-                            <button type="submit" id="button-iniciar">SING IN</button>
+                            <button type="submit" id="button-iniciar">CREATE ACCOUNT</button>
                             <span class="cadastrar">
                                 <p>Dont't have an account?
-                                    <a class="registro" href=""> Create Account?</a>
+                                    <a class="registro" href="/login">Login now?</a>
                                 </p>
                             </span>
                         </fieldset>
@@ -84,11 +81,26 @@
         </p>
         <section>
             <figure>
-                <img src="./img/digitalWorld.02b871c1.svg" alt="Diggital World" class="logo logo-footer">
+                <img src="img/digitalWorld.02b871c1.svg" alt="Diggital World" class="logo logo-footer">
             </figure>
         </section>
 
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
+        <% if (typeof alert != "undefined")  { %>
+        <script>
+        Swal.fire({
+        title:'<%= alertTitle %>',
+        text:'<%= alertMessage %>',
+        icon:'<%= alertIcon %>',
+        showConfirmButton: '<%= showConfirmButton %>',
+        timer: '<%= timer %>'
+        }).then(()=>{
+        window.location='/<%= ruta %>'
+        })
+        </script>
+        <% } %>
 </body>
 </html>

@@ -30,6 +30,17 @@ body {
     display: flex;
     justify-content: space-between;
 }
+.userName {
+    display: flex;
+    position: absolute;
+    width: 87px;
+    right: -57%;
+    bottom: -20px;
+}
+.badge{
+    color: #FBFAFB;
+    font-weight: 900;
+}
 
 .app-logo{
     width: 20%;
@@ -53,6 +64,7 @@ body {
     padding-right: 2.5rem;
     width: 100%;
     height: 100%;
+    color: #272626ca;
 }
 
 .container .app-search-icon {
@@ -60,6 +72,7 @@ body {
     position: absolute;
     right: -48px;
     top:25%;
+    opacity: 61%;
 }
 .profile {
    width: 55px;
@@ -68,10 +81,6 @@ body {
    top: 22px;
     
 }
-
-
-
-
 
 /* menu top icon */
 .app-main-container {
@@ -134,113 +143,79 @@ body {
     left: 6px;
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 25px;
-}
-
-.app-slider {
-    background-color: #003259;
-    background-image: url(/img/background3.webp);
-    width: 67%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    color: #FBFAFB;
-    border-bottom: 0.5rem solid #ffc117;
-    border-radius: 10px;
-}
 
 
-
-
-
-
-
+/* main */
 .main {
     display: flex;
     justify-content: center;
 }
-
-
-
 .main-section {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    
     width: 67%;
-}
-.main-section span {
-    font-weight: 400;
-    color: #21456c;
-}
-.main-section .overall-profit .benefits span {
-    position: relative;
-    top: 10px;
-    left: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .overall-profit {
-    background-color: var(--purple-light-1);
-    width: 350px;
-    height: 160px;
-    border-radius: 20px;
-    border-bottom: 0.5rem solid #ffc117;
-}
-.overall-profit h2 {
+    width: 100%;
+    background-color: #f1f1f1;
     display: flex;
-    margin-left: 30px;
-    margin-top: 38px;
+    justify-content: space-between;
+    border-bottom: 0.5rem solid #ffc117;
+    border-radius: 10px;
+}
+.deposit-terms {
+    width: 40%;
+    text-align: center; 
 }
 
-.benefits {
-    display: flex;
+
+.input-deposit {
+    border-radius: 10px;
+    width: 50%;
+}
+.input-deposit .uploading-form {
+    display: grid;
     justify-content: center;
-    font-size: 20px;
-    margin-top: 25px;
-    margin-right: 30px;
 }
-.benefits img {
-    width: 40px;
-    margin-left: 50px;
-}
-
-.active-contracts {
-    background-color: var(--purple-light-1);
-    width: 400px;
-    height: 160px;
-    border-radius: 20px;
-    border-bottom: 0.5rem solid #ffc117;
+.input-deposit .uploading-form label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: left;
+    width: 100%;
+    margin-top: 13px;
     
 }
-.active-contracts .investment {
-    display: flex;
-    justify-content: space-evenly;
-}
-.active-contracts .investment img {
-    height: 87px;
-    display: flex;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-.active-contracts span {
-    margin-top: 60px;
-    font-size: 20px;
-    margin-left: -56px;
-}
-.active-contracts .btn {
+.input-deposit .uploading-form input {
+   
+    width: 100%;
     height: 35px;
-    display: flex;
-    justify-content: center;
+    margin: 0;
+    padding: 0.5rem 0.5rem;
+    color: #272626ca;
+    background-color: #fff;
+    border: 1px solid #adadad;
+    border-radius: 8px;
+    font-size: 14px;
+    max-width: 95%;
+    margin-top: 5px;
 }
-.active-contracts a {
+.input-deposit .uploading-form .copy-clipboard {
+    position: relative;
+    bottom: 43px;
+}
+.input-deposit .uploading-form .app-search-icon {
+    height: 30px;
+    position: relative;
+    left: 295px;
+    opacity: 61%;
+}
+
+.input-deposit .uploading-form .btn-submit {
     background-color: #001a50;
     width: 80%;
     display: flex;
-    height: 100%;
+    height: 50px;
     border-radius: 20px;
     text-align: center;
     box-shadow: 0px 0px 1rem rgb(0 0 0 / 25%);
@@ -250,9 +225,30 @@ header {
     font-weight: 700;
     text-transform: uppercase;
     margin-top: 10px;
+    margin-left: 38px;
     align-items: center;
+    margin-bottom: 15px;
 }
 
+
+.image-style {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #adadad;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+.input-deposit #file {
+    border: none;
+}
+#preview img {
+    display: block;
+    width: 100%;
+}
+
+/* footer */
 .footer {
     display: flex;
     justify-content: center;
@@ -262,7 +258,7 @@ header {
     justify-content: center;
     width: 67%;
     position: absolute;
-    bottom: 0;
+    
 }
 .text-footer {
     font-size: 1.1rem;
@@ -285,6 +281,7 @@ header {
     color: #fff;
 }
 
+
 @media (max-width:500px) {
     .header-container {
         display: block;
@@ -295,6 +292,13 @@ header {
     }
     .header-container .app-search {
         width: 100%;
+    }
+    .userName {
+        display: flex;
+        position: absolute;
+        width: 87px;
+        left: 107%;
+        bottom: 56px;   
     }
     .header-container .app-search .app-search-icon {
         margin-right: -65px;
@@ -307,7 +311,7 @@ header {
         right: 10px;
     }
 
-    
+    /* navbar */
     .main-container {
         padding-top: 40px;
     }
@@ -329,61 +333,50 @@ header {
     .menuTopIcons span {
         top: 33px;
         left: 0;
-    
-    }
-
-
-    .app-slider {
-        width: 95%;
-        height: 150px;
-        margin-top: -25px;
     }
     .menuTopIcons .app-navbar-icon img {
         top: 12px;
         left: 0;
     }
 
-
-    /* main */
-    .main .main-section {
-        display: block;
+    /* main  */
+    .main-section {
+        
         width: 100%;
-        justify-content: center;
-        padding-left: 20px;
     }
-    .main .main-section .overall-profit{
-        width: 95%;
-        height: 100px;
-        margin-bottom: 10px;
+    .main-section .overall-profit {
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        background-color: #f1f1f1;
+        border-radius: 10px;
+    }
+    .main-section .overall-profit .deposit-terms {
+        width: 100%;
+        border-bottom: none;
+    }
+    .main-section .overall-profit .input-deposit {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .main-section .overall-profit .uploading-form {
+        width: 100%;
+    }
+    .main-section .overall-profit .uploading-form input {
+        height: 40px;
         
     }
-    .main .main-section .overall-profit h2 {
-        font-size: 20px;
-        padding-top: 12px;
-    }
-    .main .main-section .overall-profit img {
-        width: 33px;
-        height: 33px;
-    }
-    .main-section .overall-profit .benefits {
-        margin-top: 0;
-        margin-right: 0;
-    }
-    .main-section .overall-profit .benefits span {
-        font-size: 20px;
-        margin-top: 5px;
-        position: relative;
-        top: 0;
-    }
-    
-
-    .main .main-section .active-contracts {
-        width: 95%;
+    .main-section .overall-profit .uploading-form .app-search-icon {
+        left: 298px;
+        top: 5px;
     }
 
     /* footer */
-    .footer .footer-container {
-        width: 100%;
+    .footer .footer-container .text-footer {
+        font-size: 1rem;
+    }
+    .footer .footer-container span {
         font-size: 1rem;
     }
 }

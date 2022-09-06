@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | DiggitalWorld</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body class="app">
     <div class="container">
@@ -22,6 +22,11 @@
                             </path>
                         </svg>
                     </a>
+                    <div class="userName"><p>
+                        <% if (user) { %>
+                            <span class="badge bg-success"><%= user.user %></span>
+                        <% } %></p>
+                    </div>
                 </div>
             <img class="profile" src="./icons/8.png" alt="perfil">
         </header>
@@ -32,7 +37,7 @@
             <nav class="app-navbar">
                 <ul class="menuTopIcons">
                     <li class="">
-                        <a href="/app/home.html">
+                        <a href="/">
                             <div class="app-navbar-icon">                        
                                 <img src="./icons/home.png" alt="Home">
                             </div>
@@ -40,7 +45,7 @@
                         </a>
                     </li>
                     <li class="">
-                        <a href="/app/deposit.html">
+                        <a href="deposit">
                             <div class="app-navbar-icon">                        
                                 <img src="./icons/deposit.png" alt="Diposit">
                             </div>
@@ -48,7 +53,7 @@
                         </a>
                     </li>
                     <li class="">
-                        <a href="/Team">
+                        <a href="Team">
                             <div class="app-navbar-icon">                        
                                 <img src="./icons/afiliados2.png" alt="Team">
                             </div>
@@ -56,7 +61,7 @@
                         </a>
                     </li>
                     <li class="">
-                        <a href="/app/withdraw.html">
+                        <a href="withdraw">
                             <div class="app-navbar-icon">                        
                                 <img src="./icons/finanzas.png" alt="Withdraw">
                             </div>
@@ -64,7 +69,7 @@
                         </a>
                     </li>
                     <li class="">
-                        <a href="/finance">
+                        <a href="finance">
                             <div class="app-navbar-icon">                        
                                 <img src="./icons/retiro.png" alt="Finance">
                             </div>
@@ -80,7 +85,7 @@
                         
                     </li>
                     <li class="">
-                        <a href="/AboutUs">
+                        <a href="AboutUs">
                             <div class="app-navbar-icon">                        
                                 <img src="./icons/tickets.png" alt="About us">
                             </div>
@@ -116,7 +121,7 @@
                     <span><strong>$200.00</strong> USDT</span>
                 </div>
                 <div class="btn">
-                    <a href="/deposit" class="btn">New deposit</a>
+                    <a href="deposit" class="btn">New deposit</a>
                 </div>
                 <!-- <p>contactos activos</p> -->
             </section>
