@@ -24,6 +24,13 @@ app.use(cookieParser());
 //Llamar al router
 app.use("/", require("./routes/router"))
 
+//Para eliminar la cache
+app.use(function(req,res, next){
+    if(!req.user)
+        res.header("Cache-Control", "private, no-cache, no-store, must-revalidate");
+    next();
+})
+
 app.listen(3000, ()=>{
     console.log("SERVER UP running in http://localhost:3000");
 })

@@ -33,36 +33,6 @@ exports.register = async (req, res) => {
     }
 }
 
-//Metodo para depositos
-exports.deposit = (req, res) =>{
-    try {
-        const userDeposit = req.body.userDeposit;
-        const txid =req.body.TXID;
-        const usd = req.body.depositTotal;
-        const file = req.body.file;
-        console.log(userDeposit+" "+ txid+" "+usd+" "+file);
-        conection.query("INSERT INTO deposit SET ?", {userDeposit:userDeposit, TXID:txid, usd:usd, file:file}, (error, results) => {
-            if (error) {
-                console.log("el error es: "+ error);
-            }else {
-                res.render('register', {
-                    alert: true,
-                    alertTitle: "Deposit",
-                    alertMessage: "¡Successful deposit!",
-                    alertIcon:'success',
-                    showConfirmButton: false,
-                    timer: null,
-                    ruta: ''
-                });
-            }
-
-            //res.redirect("/")
-        })
-    } catch (error) {
-        console.log(error)
-    }
-}
-
 //Procedimineto para logearnos
 exports.login = async (req, res) => {
     try {
@@ -145,4 +115,57 @@ exports.isAuthenticated = async (req, res, next)=>{
 exports.logout = (req, res)=>{
     res.clearCookie('jwt')   
     return res.redirect('/')
+}
+
+//Metodo para depositos
+exports.deposit = (req, res) =>{
+    try {
+        const userDeposit = req.body.userDeposit;
+        const txid =req.body.TXID;
+        const usd = req.body.depositTotal;
+        const file = req.body.file;
+        console.log(userDeposit+" "+ txid+" "+usd+" "+file);
+        conection.query("INSERT INTO deposit SET ?", {userDeposit:userDeposit, TXID:txid, usd:usd, file:file}, (error, results) => {
+            if (error) {
+                console.log("el error es: "+ error);
+            }else {
+                res.render('register', {
+                    alert: true,
+                    alertTitle: "Deposit",
+                    alertMessage: "¡Successful deposit!",
+                    alertIcon:'success',
+                    showConfirmButton: false,
+                    timer: null,
+                    ruta: ''
+                });
+            }
+
+            //res.redirect("/")
+        })
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+//metodo para retiros
+exports.withdrawals = (req, res) => {j
+    const wallet = req.body.wallet;
+    const usd = req.body.usdRetiro;
+
+    console.log(wallet+usd);
+    conection.query("INSERT INTO retiros SET ?", {wallet:wallet, usdRetiro:usd}, (error, results) => {
+        if(error){
+            console.log(error);
+        } else {
+            res.render('withdraw', {
+                alert: true,
+                alertTitle: "Withdraw",
+                alertMessage: "¡Successful withdraw!",
+                alertIcon:'success',
+                showConfirmButton: false,
+                timer: null,
+                ruta: ''
+            });
+        }
+    })
 }

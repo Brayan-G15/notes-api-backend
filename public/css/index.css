@@ -30,13 +30,42 @@ body {
     display: flex;
     justify-content: space-between;
 }
+.header-container .app-search .copy-clipboard {
+    position: relative;
+    bottom: 43px;
+    cursor: pointer;
+    width: 112%;
+    display: flex;
+    height: 40px;
+
+}
+.header-container .app-search .app-search-icon {
+    height: 30px;
+    position: relative;
+    left: 94%;
+    top: 25%;
+    opacity: 65%;
+}
+#message {
+    position: relative;
+    left: 79%;
+    bottom: 20px;
+    display: grid;
+    width: 70px;
+    height: 24px;
+    border-radius: 20px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
 
 .userName {
     display: flex;
     position: absolute;
     width: 87px;
-    right: -57%;
-    bottom: -20px;
+    right: -40%;
+    bottom: -7px;
 }
 
 .badge{
@@ -46,6 +75,26 @@ body {
 
 .app-logo{
     width: 20%;
+}
+
+.desktop-menu{
+    position: relative;
+    margin-top: 26px;
+}
+
+.btn-logout{
+    text-decoration: none;
+    background-color: #fff;
+    color: #001a50;
+    border-radius: 10px;
+    width: 63px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
 }
 
 
@@ -66,6 +115,7 @@ body {
     padding-right: 2.5rem;
     width: 100%;
     height: 100%;
+    color: #272626ca;
 }
 
 .container .app-search-icon {
@@ -73,6 +123,7 @@ body {
     position: absolute;
     right: -48px;
     top:25%;
+    opacity: 61%;
 }
 .profile {
    width: 55px;
@@ -275,7 +326,7 @@ header {
     justify-content: center;
     width: 67%;
     position: absolute;
-    bottom: 0;
+    bottom: -48px;
 }
 .text-footer {
     font-size: 1.1rem;
@@ -303,14 +354,14 @@ header {
         display: block;
     }
     .header-container .app-logo {
-        width: 190px;
+        width: 163px;
         margin-left: -28px;
     }
     .header-container .app-search {
         width: 100%;
     }
     .header-container .app-search .app-search-icon {
-        margin-right: -65px;
+        left: 92%;
     }
     .header-container .app-search input {
         margin-left: 64px;
@@ -319,15 +370,34 @@ header {
         display: flex;
         position: absolute;
         width: 87px;
-        left: 107%;
-        bottom: 56px;   
+        left: 60%;
+        bottom: 70px;   
+        font-size: 14px;
     }
-    .header-container .profile {
+    .btn-logout{
+        position: relative;
+        left: 7px;
+    }
+    .header-container .app-search .copy-clipboard {
+        left: 68px;
+        width: 116%;
+    } 
+    #message{
+        left: 71%;
+    }
+    .desktop-menu {
+        position: relative;
+        bottom: 100px;
+        left: 88%;
+        width: 20px;
+    }
+    /* .header-container .profile {
         position: absolute;
         right: 10px;
-    }
+    } */
 
     
+    /* navbar */
     .main-container {
         padding-top: 40px;
     }
@@ -338,9 +408,7 @@ header {
     }
     .menuTopIcons {
         width: 600px;
-        height: 110px;
         padding-left: 2px;
-        overflow-x: auto;
     }
     .menuTopIcons li {
         width: 60px;
@@ -350,6 +418,15 @@ header {
         top: 33px;
         left: 0;
     
+    }
+    .menuTopIcons .deposit {
+        top: 37px;
+    }
+    .menuTopIcons .withdraw{
+        top: 25px;
+    }
+    .menuTopIcons  .about{
+        top: 25px;
     }
 
 
@@ -405,5 +482,13 @@ header {
     .footer .footer-container {
         width: 100%;
         font-size: 1rem;
+        bottom: 0;
+    }
+}
+
+
+@media (max-height: 700px){
+    .footer .footer-container {
+        bottom: -166px;
     }
 }

@@ -275,9 +275,7 @@ body {
     }
     .menuTopIcons {
         width: 600px;
-        height: 110px;
         padding-left: 2px;
-        overflow-x: auto;
     }
     .menuTopIcons li {
         width: 60px;
@@ -286,6 +284,15 @@ body {
     .menuTopIcons span {
         top: 33px;
         left: 0;
+    }
+    .menuTopIcons .deposit {
+        top: 37px;
+    }
+    .menuTopIcons .withdraw{
+        top: 25px;
+    }
+    .menuTopIcons  .about{
+        top: 25px;
     }
     .menuTopIcons .app-navbar-icon img {
         top: 12px;
