@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(/img/background.jpg);
+    background-color: #010f24;
     font-family: var(--font-family-titles);
 }
 
@@ -30,7 +30,39 @@ body {
     display: flex;
     justify-content: space-between;
 }
-
+.header-container .app-search .copy-clipboard {
+    position: relative;
+    bottom: 43px;
+    cursor: pointer;
+    width: 111%;
+    display: flex;
+    height: 40px;
+}
+.header-container .app-search .app-search-icon {
+    height: 30px;
+    position: relative;
+    left: 95%;
+    top: 25%;
+    opacity: 65%;
+}
+.userName {
+    display: flex;
+    position: absolute;
+    width: 87px;
+    right: 11%;
+    top: 40px;
+}
+.badge{
+    color: #FBFAFB;
+    font-weight: 900;
+}
+#message{
+    position: relative;
+    left: 80%;
+    bottom: 16px;
+    color: #fff;
+    font-weight: 800;
+}
 .app-logo{
     width: 20%;
 }
@@ -41,7 +73,7 @@ body {
     height: 25px;
     position: relative;
     top: 25px;
-    right: 90px;
+    right: 24%;
 }
 
 .container .app-search input {

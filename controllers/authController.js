@@ -148,24 +148,30 @@ exports.deposit = (req, res) =>{
 }
 
 //metodo para retiros
-exports.withdrawals = (req, res) => {j
-    const wallet = req.body.wallet;
-    const usd = req.body.usdRetiro;
+exports.withdrawals = (req, res) => {
+    try {
+        const wallet = req.body.wallet;
+        const usd = req.body.usdRetiro;
+        const user = req.body.userName;
 
-    console.log(wallet+usd);
-    conection.query("INSERT INTO retiros SET ?", {wallet:wallet, usdRetiro:usd}, (error, results) => {
-        if(error){
-            console.log(error);
-        } else {
-            res.render('withdraw', {
-                alert: true,
-                alertTitle: "Withdraw",
-                alertMessage: "¡Successful withdraw!",
-                alertIcon:'success',
-                showConfirmButton: false,
-                timer: null,
-                ruta: ''
-            });
-        }
-    })
+        console.log(`${user} ${wallet} ${usd}`);
+        conection.query("INSERT INTO retiros SET ?", {userName:user, wallet:wallet, usdRetiro:usd}, (error, results) => {
+            if(error){
+                console.log(error);
+            } else {
+                res.render('register', {
+                    alert: true,
+                    alertTitle: "Withdraw",
+                    alertMessage: "¡Successful withdraw!",
+                    alertIcon:'success',
+                    showConfirmButton: false,
+                    timer: null,
+                    ruta: ''
+                });
+            }
+        })
+    } catch (error) {
+        console.log(error);
+    }
+    
 }

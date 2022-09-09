@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(/img/background.jpg);
+    background-color: #010f24;
     font-family: var(--font-family-titles);
 }
 

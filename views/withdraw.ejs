@@ -23,7 +23,12 @@
                         <span id="message"></span>
                     </a>
                 </div>
-            <img class="profile" src="/icons/8.png" alt="perfil">
+                <div class="userName"><p>
+                    <% if (user) { %>
+                        <span class="badge bg-success"><%= user.user %></span>
+                    <% } %></p>
+                </div>
+            <!-- <img class="profile" src="/icons/8.png" alt="perfil"> -->
         </header>
     </div>
 
@@ -105,13 +110,14 @@
                                 TRX Tron (TRC20)
                             </p>
                         </section>
-                        
+                        <label for="userName">User</label>
+                        <input type="text" name="userName" id="userName" placeholder="Enter Username" required aria-required="true">
 
                         <label for="wallet">Withdrawl Wallet </label>
-                        <input type="text" name="wallet" id="direction" placeholder="Enter your withdrawal address">
+                        <input type="text" name="wallet" id="direction" placeholder="Enter your withdrawal address" required>
 
                         <label for="usdRetiro">USDT Amount</label>
-                        <input type="number" name="usdRetiro" id="depositTotal" placeholder="Enter amount" >
+                        <input type="number" name="usdRetiro" id="depositTotal" placeholder="Enter amount" required>
 
                         <input class="btn-submit" type="submit">
 

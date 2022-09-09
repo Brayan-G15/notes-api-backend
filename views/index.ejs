@@ -111,17 +111,23 @@
                 <h2>overall profit</h2>
                 <div class="benefits">
                     <img class="img-btc" src="/icons/btc.png" alt="">
-                    <span>
-                        <strong>$200.00</strong> USDT
-                    </span>
-                    <img src="/icons/wallet.png" alt="">
+                        <div class="saldoRetiro"><p>
+                            <% if (user) { %>
+                                <span class="badge bg-success"> <strong><%= user.saldoRetiro %></strong> USDT</span>
+                            <% } %></p>
+                        </div> 
+                    <img class="img-wallet" src="/icons/wallet.png" alt="">
                 </div>
             </section>
             <section class="active-contracts">
                 
                 <div class="investment">
                     <img src="/icons/contratos.png" alt="">
-                    <span><strong>$200.00</strong> USDT</span>
+                    <div class="saldoDeposito"><p>
+                        <% if (user) { %>
+                            <span class="badge bg-success"> <strong><%= user.saldoDeposito %></strong> USDT</span>
+                        <% } %></p>
+                    </div> 
                 </div>
                 <div class="btn">
                     <a href="deposit" class="btn">New deposit</a>

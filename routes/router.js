@@ -18,7 +18,7 @@ router.get("/register", (req, res)=>{
 })
 
 // router.get("/logout", (req, res)=>{
-//     res.render("logout")
+//     res.render("login")
 // })
 
 router.get("/deposit", authController.isAuthenticated, (req, res)=>{
@@ -28,8 +28,8 @@ router.get("/deposit", authController.isAuthenticated, (req, res)=>{
 router.get("/finance", (req, res)=>{
     res.render("finance")
 })
-router.get("/withdraw", (req, res)=>{
-    res.render("withdraw")
+router.get("/withdraw", authController.isAuthenticated, (req, res)=>{
+    res.render("withdraw", {user:req.user})
 })
 
 
