@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deposit | DiggitalWorld</title>
-    <link rel="stylesheet" href="css/deposit.css">
+    <title>About us | DiggitalWorld</title>
+    <link rel="stylesheet" href="css/withdraw.css">
 </head>
 <body class="app">
     <div class="container">
@@ -13,20 +13,20 @@
             <img class="app-logo me-sm-5 mb-3 mb-sm-0" src="/img/logo.7b621426.svg" alt="">
             
                 <div class="app-search">
-                    <input id="urlRegister" name="urlRegister" type="text" value="https://digitalWorld.com/auth/register?c=72799710">
-                    <a id="urlCopiar" class="copy-clipboard">
+                    <input id="contenido" name="contenido" type="text" value="https://diggitalWorld.com/auth/register?c=72799710">
+                    <a id="copiar" class="copy-clipboard">
                         <svg class="app-search-icon" viewBox="0 0 24 24">
                             <path fill="none" d="M0 0h24v24H0z"></path>
                             <path d="M7 6V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-3v3c0 .552-.45 1-1.007 1H4.007A1.001 1.001 0 0 1 3 21l.003-14c0-.552.45-1 1.007-1H7zM5.003 8L5 20h10V8H5.003zM9 6h8v10h2V4H9v2z">
                             </path>
                         </svg>
-                        <span id="messageCopied"></span>
+                        <span id="message"></span>
                     </a>
-                    <div class="userName"><p>
-                        <% if (user) { %>
-                            <span class="badge bg-success"><%= user.user %></span>
-                        <% } %></p>
-                    </div>
+                </div>
+                <div class="userName"><p>
+                    <% if (user) { %>
+                        <span class="badge bg-success"><%= user.user %></span>
+                    <% } %></p>
                 </div>
             <!-- <img class="profile" src="/icons/8.png" alt="perfil"> -->
         </header>
@@ -47,13 +47,13 @@
                     <li class="">
                         <a href="deposit">
                             <div class="app-navbar-icon">                        
-                                <img src="/icons/deposit.png" alt="Deposit">
+                                <img src="/icons/deposit.png" alt="Diposit">
                             </div>
                             <span class="deposit">Deposit</span>
                         </a>
                     </li>
                     <li class="">
-                        <a href="team">
+                        <a href="Team">
                             <div class="app-navbar-icon">                        
                                 <img src="/icons/afiliados2.png" alt="Team">
                             </div>
@@ -96,47 +96,19 @@
     </div>
     <main class="main">
         <div class="main-section">
-            <section class="overall-profit">
-                <div class="deposit-terms">
-                    <h2>Deposit terms</h2>
-                    <p>-Minimum deposit 20 USDT</p>
-                    <p>-Transfer cost 1 USDT</p>   
-                </div>
-                <div class="input-deposit">
-                    <form class="uploading-form" method="post" action="/deposit" id="uploadForm">
-                        <label for="contenido"> TRX Tron (TRC20)</label>
-                        <input type="text" value="TFt5ijG2UmeYGmqQEx6pKPyTfK4YT2VjiE " name="contenido" id="contenido">
-                        <a id="copiar" class="copy-clipboard">
-                        
-                            <svg id="copia" class="app-search-icon" viewBox="0 0 24 24">
-                                <path fill="none" d="M0 0h24v24H0z"></path>
-                                <path d="M7 6V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-3v3c0 .552-.45 1-1.007 1H4.007A1.001 1.001 0 0 1 3 21l.003-14c0-.552.45-1 1.007-1H7zM5.003 8L5 20h10V8H5.003zM9 6h8v10h2V4H9v2z">
-                                </path>
-                            </svg>
-                            <span id="message"></span>
-                        </a>
-                        <label for="userdeposit">User</label>
-                        <input type="text" name="userDeposit" id="userDeposit" placeholder="User" required="required" aria-required="true">
+            <section class="aboutUs">
+                <h3>INVESTMENT MANAGEMENT</h3>
+                <p>Diggitalworld is a legally registered private online investment company with the aim of making the highest possible profit from forex trading.</p>
+                
+                <p> We offer a variety of services to bring investors closer to projects and organizations that need capital.</p>
 
-                        <label for="TXID">TXID</label>
-                        <input type="text" name="TXID" id="TXID" placeholder="TXID" required="required" aria-required="true">
+                <p> At Diggitalworld, we have been continuously transforming the traditional money management industry to open financial markets to everyone, everywhere..</p>
 
-                        <label for="depositTotal">Deposito USDT</label>
-                        <input type="number" name="depositTotal" id="depositTotal" placeholder="Ingresar cantidad" required="required" aria-required="true">
+                <p>We help portfolio companies develop and execute strategic growth, build the board and executive management team, explore capitalization structures, pursue growth mergers and acquisitions, and enhance market presence.</p>
+                
+                <p>Our investment allies play a fundamental role in our company, investing funds in order to expand credit coverage for more people who need our services. The interest margin that is acquired for each financial credit is 5% daily for a period of 90 days, this being the maximum term of total payment of the credit. Our investment allies will have daily dividends of 3% generated from that 5% of the interest paid and the company will use the remaining 2% to cover operating expenses and its self-sustainability.</p>
 
-                        <label for="file">Subir comprobante</label>
-                        
-                        <input type="file" id="file" name="file" required="required" aria-required="true">
-                        <div class="image-style" id="preview">
-                            
-                        </div>
-                        
-
-                        <input class="btn-submit" type="submit">
-
-
-                    </form>
-                </div>
+                <p class="support-email">Support Email: <span>admin@diggitalWorld.com</span> </p>
             </section>
         </div>   
     </main>
@@ -146,26 +118,12 @@
                 2022 © DiggitalWorld
                 <span>All rights reserved</span>
             </p>
-        </section>        
+        </section> 
+           
     </footer>
 
-    <script src="js/previewImg.js"></script>
-    <script src="js/btnCopy.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
-        <% if (typeof alert != "undefined")  { %>
-        <script>
-        Swal.fire({
-        title:'<%= alertTitle %>',
-        text:'<%= alertMessage %>',
-        icon:'<%= alertIcon %>',
-        showConfirmButton: '<%= showConfirmButton %>',
-        timer: '<%= timer %>'
-        }).then(()=>{
-        window.location='/<%= ruta %>'
-        })
-        </script>
-        <% } %>
+    <script src="js/btnCopy.js"></script>
 
 </body>
 </html>

@@ -24,12 +24,17 @@ router.get("/register", (req, res)=>{
 router.get("/deposit", authController.isAuthenticated, (req, res)=>{
     res.render("deposit", {user:req.user})
 })
-
-router.get("/finance", (req, res)=>{
-    res.render("finance")
+router.get("/team", (req, res) => {
+    res.render("team", {user:req.user})
 })
 router.get("/withdraw", authController.isAuthenticated, (req, res)=>{
     res.render("withdraw", {user:req.user})
+})
+router.get("/finance", (req, res)=>{
+    res.render("finance")
+})
+router.get("/aboutUs", (req, res)=>{
+    res.render("aboutUs", {user:req.user})
 })
 
 
@@ -40,6 +45,7 @@ router.post('/login', authController.login);
 router.get('/logout', authController.logout); // se pone get cuando no expecificamos un action en el archivo ejs
 router.post("/deposit", authController.deposit);
 router.post("/withdraw", authController.withdrawals);
+//router.post("/aboutUs", authController.aboutUs);
 //segui realizando este procedimineto para encontrar las rutas faltantes
 
 module.exports = router

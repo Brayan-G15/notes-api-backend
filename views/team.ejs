@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deposit | DiggitalWorld</title>
-    <link rel="stylesheet" href="css/deposit.css">
+    <title>About us | DiggitalWorld</title>
+    <link rel="stylesheet" href="css/withdraw.css">
 </head>
 <body class="app">
     <div class="container">
@@ -13,20 +13,20 @@
             <img class="app-logo me-sm-5 mb-3 mb-sm-0" src="/img/logo.7b621426.svg" alt="">
             
                 <div class="app-search">
-                    <input id="urlRegister" name="urlRegister" type="text" value="https://digitalWorld.com/auth/register?c=72799710">
-                    <a id="urlCopiar" class="copy-clipboard">
+                    <input id="contenido" name="contenido" type="text" value="https://diggitalWorld.com/auth/register?c=72799710">
+                    <a id="copiar" class="copy-clipboard">
                         <svg class="app-search-icon" viewBox="0 0 24 24">
                             <path fill="none" d="M0 0h24v24H0z"></path>
                             <path d="M7 6V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-3v3c0 .552-.45 1-1.007 1H4.007A1.001 1.001 0 0 1 3 21l.003-14c0-.552.45-1 1.007-1H7zM5.003 8L5 20h10V8H5.003zM9 6h8v10h2V4H9v2z">
                             </path>
                         </svg>
-                        <span id="messageCopied"></span>
+                        <span id="message"></span>
                     </a>
-                    <div class="userName"><p>
-                        <% if (user) { %>
-                            <span class="badge bg-success"><%= user.user %></span>
-                        <% } %></p>
-                    </div>
+                </div>
+                <div class="userName"><p>
+                    <% if (user) { %>
+                        <span class="badge bg-success"><%= user.user %></span>
+                    <% } %></p>
                 </div>
             <!-- <img class="profile" src="/icons/8.png" alt="perfil"> -->
         </header>
@@ -47,7 +47,7 @@
                     <li class="">
                         <a href="deposit">
                             <div class="app-navbar-icon">                        
-                                <img src="/icons/deposit.png" alt="Deposit">
+                                <img src="/icons/deposit.png" alt="Diposit">
                             </div>
                             <span class="deposit">Deposit</span>
                         </a>
@@ -96,47 +96,17 @@
     </div>
     <main class="main">
         <div class="main-section">
-            <section class="overall-profit">
-                <div class="deposit-terms">
-                    <h2>Deposit terms</h2>
-                    <p>-Minimum deposit 20 USDT</p>
-                    <p>-Transfer cost 1 USDT</p>   
-                </div>
-                <div class="input-deposit">
-                    <form class="uploading-form" method="post" action="/deposit" id="uploadForm">
-                        <label for="contenido"> TRX Tron (TRC20)</label>
-                        <input type="text" value="TFt5ijG2UmeYGmqQEx6pKPyTfK4YT2VjiE " name="contenido" id="contenido">
-                        <a id="copiar" class="copy-clipboard">
-                        
-                            <svg id="copia" class="app-search-icon" viewBox="0 0 24 24">
-                                <path fill="none" d="M0 0h24v24H0z"></path>
-                                <path d="M7 6V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-3v3c0 .552-.45 1-1.007 1H4.007A1.001 1.001 0 0 1 3 21l.003-14c0-.552.45-1 1.007-1H7zM5.003 8L5 20h10V8H5.003zM9 6h8v10h2V4H9v2z">
-                                </path>
-                            </svg>
-                            <span id="message"></span>
-                        </a>
-                        <label for="userdeposit">User</label>
-                        <input type="text" name="userDeposit" id="userDeposit" placeholder="User" required="required" aria-required="true">
+            <section class="aboutUs">
+                <form class="uploading-form" method="post" action="/withdraw"  id="uploadForm">
+                    <label for="userName">User</label>
+                        <input type="text" name="userName" id="userName" placeholder="Enter Username" required aria-required="true">
 
-                        <label for="TXID">TXID</label>
-                        <input type="text" name="TXID" id="TXID" placeholder="TXID" required="required" aria-required="true">
-
-                        <label for="depositTotal">Deposito USDT</label>
-                        <input type="number" name="depositTotal" id="depositTotal" placeholder="Ingresar cantidad" required="required" aria-required="true">
-
-                        <label for="file">Subir comprobante</label>
-                        
-                        <input type="file" id="file" name="file" required="required" aria-required="true">
-                        <div class="image-style" id="preview">
-                            
-                        </div>
-                        
+                        <label for="wallet">Guest user </label>
+                        <input type="text" name="wallet" id="direction" placeholder="Enter Your Guest User" required>
 
                         <input class="btn-submit" type="submit">
-
-
-                    </form>
-                </div>
+                </form>
+                
             </section>
         </div>   
     </main>
@@ -146,26 +116,12 @@
                 2022 © DiggitalWorld
                 <span>All rights reserved</span>
             </p>
-        </section>        
+        </section> 
+           
     </footer>
 
-    <script src="js/previewImg.js"></script>
-    <script src="js/btnCopy.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
-        <% if (typeof alert != "undefined")  { %>
-        <script>
-        Swal.fire({
-        title:'<%= alertTitle %>',
-        text:'<%= alertMessage %>',
-        icon:'<%= alertIcon %>',
-        showConfirmButton: '<%= showConfirmButton %>',
-        timer: '<%= timer %>'
-        }).then(()=>{
-        window.location='/<%= ruta %>'
-        })
-        </script>
-        <% } %>
+    <script src="js/btnCopy.js"></script>
 
 </body>
 </html>

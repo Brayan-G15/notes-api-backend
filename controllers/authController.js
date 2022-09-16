@@ -9,10 +9,11 @@ exports.register = async (req, res) => {
         const name = req.body.name;
         const user = req.body.user;
         const pass = req.body.pass;
+        const mail = req.body.mail;
         let passHash = await bcryptjs.hash(pass, 8);
         console.log(name+ " "+user+" "+pass);
         //console.log(passHash);
-        conection.query("INSERT INTO users SET ?", {user:user, name:name, pass:passHash}, (error, results) => {
+        conection.query("INSERT INTO users SET ?", {user:user, name:name, mail:mail ,pass:passHash}, (error, results) => {
             if(error){
                 console.log("el error es: " + error);
             }else {
@@ -25,6 +26,9 @@ exports.register = async (req, res) => {
                     timer: 5500,
                     ruta: 'login'
                 });
+            }
+            if (user!=user) {
+                console.log("usuario existente");
             }
             //res.redirect("/login")
         })

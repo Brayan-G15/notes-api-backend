@@ -86,6 +86,7 @@ body {
     width: 100%;
     height: 100%;
     color: #272626ca;
+    background-color: #c2c9d6;
 }
 
 .container .app-search-icon {
@@ -179,6 +180,19 @@ body {
     border-radius: 8px;
     border-bottom: 0.5rem solid #ffc117;
 }
+.main-section .aboutUs{
+    display: grid;
+    background-color: #dee3ed;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.main-section .aboutUs h3{
+    color: rgb(17 116 163);
+}
+.main-section .aboutUs p{
+    color: rgb(47 48 49);
+    margin-top: 0;
+}
 .overall-profit {
     width: 100%;
     display: flex;
@@ -235,6 +249,12 @@ body {
     align-items: center;
     margin-bottom: 15px;
 }
+.main-section .aboutUs .support-email{
+    color: goldenrod;
+}
+.main-section .aboutUs .support-email span{
+    color: rgb(17 116 163);
+}
 
 
 /* footer */
@@ -285,11 +305,16 @@ body {
     .header-container .app-search {
         width: 100%;
     }
-    .header-container .app-search .app-search-icon {
-        margin-right: -65px;
+    .userName{
+        top: 18px;
+        margin-right: -16px;
+    }
+    .header-container .app-search .copy-clipboard {
+        left: 60px;
     }
     .header-container .app-search input {
-        margin-left: 64px;
+
+        margin-left: 53px;
     }
     .header-container .profile {
         position: absolute;
@@ -359,4 +384,7 @@ body {
         height: 40px;
         
     }
+}
+.footer .footer-container{
+    position: inherit;
 }

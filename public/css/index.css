@@ -84,7 +84,7 @@ body {
 
 .btn-logout{
     text-decoration: none;
-    background-color: #fff;
+    background-color: #b38b12;
     color: #001a50;
     border-radius: 10px;
     width: 63px;
@@ -116,6 +116,7 @@ body {
     width: 100%;
     height: 100%;
     color: #272626ca;
+    background-color: #c2c9d6;
 }
 
 .container .app-search-icon {
@@ -252,6 +253,7 @@ header {
     height: 160px;
     border-radius: 20px;
     border-bottom: 0.5rem solid #ffc117;
+    background-color: #dee3ed;
 }
 .overall-profit h2 {
     display: flex;
@@ -272,6 +274,8 @@ header {
     position: relative;
 }
 .main .main-section .overall-profit .benefits .saldoRetiro {
+    position: relative;
+    left: 15px;
     width: 135px;
     font-size: 20px;
 }
@@ -285,7 +289,7 @@ header {
     height: 160px;
     border-radius: 20px;
     border-bottom: 0.5rem solid #ffc117;
-    
+    background-color: #dee3ed;
 }
 .active-contracts .investment {
     display: flex;
@@ -328,15 +332,26 @@ header {
 
 .footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
-.footer .footer-container {
+.footer .support {
+    display: flex;
+}
+.footer .support p{
+    margin-left: 5px;
+    color: #fff;
+    margin-top: 21px;
+}
+.footer .support .support-email {
+    color: #c7990e;
+}
+/* .footer .footer-container {
     display: flex;
     justify-content: center;
     width: 67%;
     position: absolute;
     bottom: -48px;
-}
+} */
 .text-footer {
     font-size: 1.1rem;
     color: #c7990e;
@@ -499,10 +514,22 @@ header {
     }
 
     /* footer */
+    .footer{
+        display: grid;
+        justify-content: center;
+        font-size: 17px;
+    }
     .footer .footer-container {
         width: 100%;
         font-size: 1rem;
         bottom: 0;
+    }
+    .footer .footer-container .text-footer {
+        margin-bottom: -4px;
+        font-size: 17px;
+    }
+    .footer .support {
+        justify-content: center;
     }
 }
 
