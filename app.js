@@ -31,6 +31,7 @@ app.use(function(req,res, next){
     next();
 })
 
-app.listen(3001, ()=>{
-    console.log("SERVER UP running in http://localhost:3001");
+const PORT = process.env.PORT || 3002
+app.listen(PORT, ()=>{
+    console.log(`SERVER UP running in ${PORT}`);
 })

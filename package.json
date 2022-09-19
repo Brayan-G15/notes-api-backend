@@ -4,6 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +21,7 @@
   "homepage": "https://github.com/Brayan-g15/DiggitalWorld#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "build": "^0.1.4",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.0.2",
     "ejs": "^3.1.8",
