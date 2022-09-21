@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="33.873" viewBox="0 0 45 33.873">
+  <g id="list" transform="translate(0 -7.434)">
+    <path id="Caminho_1" data-name="Caminho 1" d="M46.257,50.384H16.165a2.245,2.245,0,1,1,0-4.491H46.256a2.245,2.245,0,0,1,0,4.491Z" transform="translate(-3.501 -9.674)" fill="#fff"/>
+    <path id="Caminho_2" data-name="Caminho 2" d="M46.257,31.553H16.165a2.245,2.245,0,1,1,0-4.491H46.256a2.245,2.245,0,0,1,0,4.491Z" transform="translate(-3.501 -4.937)" fill="#fff"/>
+    <path id="Caminho_3" data-name="Caminho 3" d="M46.257,12.722H16.165a2.245,2.245,0,1,1,0-4.491H46.256a2.245,2.245,0,0,1,0,4.491Z" transform="translate(-3.501 -0.2)" fill="#fff"/>
+    <circle id="Elipse_1" data-name="Elipse 1" cx="3.016" cy="3.016" r="3.016" transform="translate(0 7.434)" fill="#fff"/>
+    <circle id="Elipse_2" data-name="Elipse 2" cx="3.016" cy="3.016" r="3.016" transform="translate(0 21.355)" fill="#fff"/>
+    <circle id="Elipse_3" data-name="Elipse 3" cx="3.016" cy="3.016" r="3.016" transform="translate(0 35.275)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,422 @@
+:root {
+    --purple-light-1: #FBFAFB;
+    --font-family-titles: 'Dosis', sans-serif;
+    --font-family-text: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-color: #010f24;
+    font-family: var(--font-family-titles);
+}
+
+.container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+
+.header-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.header-container .app-search .copy-clipboard {
+    position: relative;
+    bottom: 43px;
+    cursor: pointer;
+    width: 111%;
+    display: flex;
+    height: 40px;
+}
+.header-container .app-search .app-search-icon {
+    height: 30px;
+    position: relative;
+    left: 95%;
+    top: 25%;
+    opacity: 65%;
+}
+.userName {
+    display: flex;
+    position: absolute;
+    width: 87px;
+    right: -57%;
+    bottom: -20px;
+}
+.badge{
+    color: #FBFAFB;
+    font-weight: 900;
+}
+
+.app-logo{
+    width: 20%;
+}
+
+
+.container .app-search{
+    width: 45%;
+    height: 25px;
+    position: relative;
+    top: 25px;
+    right: 221px;
+}
+
+.container .app-search input {
+    border: none;
+    border-radius: 0.75rem;
+    font-weight: 500;
+    font-size: inherit;
+    padding: 0.5rem 1rem;
+    padding-right: 2.5rem;
+    width: 100%;
+    height: 100%;
+    color: #272626ca;
+    background-color: #c2c9d6;
+}
+
+.container .app-search-icon {
+    height: 30px;
+    position: absolute;
+    right: -48px;
+    top:25%;
+    opacity: 61%;
+}
+.profile {
+   width: 55px;
+   height: 55px;
+   position: relative;
+   top: 22px;
+    
+}
+
+/* menu top icon */
+.app-main-container {
+    width: 80%;
+    
+}
+.app-navbar {
+    width: 100%;
+}
+.menuTopIcons {
+    display:  flex;
+    justify-content: space-evenly; 
+    margin-right: 35px;
+} 
+.menuTopIcons li {
+    width: 80px;
+    height: 80px;
+    background-color: #FBFAFB;
+    border-radius: 10px;
+    list-style: none;
+}
+.menuTopIcons a {
+    align-items: center; 
+    display: flex;
+    color: #FBFAFB;
+    font-size: 0.625rem;
+    font-weight: 500;
+    flex-direction: column;
+    max-width: 4.25rem;
+    text-align: center;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+.menuTopIcons .nft  {
+    align-items: center; 
+    display: flex;
+    color: #FBFAFB;
+    font-size: 0.625rem;
+    font-weight: 500;
+    flex-direction: column;
+   
+    text-align: center;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+.menuTopIcons .app-navbar-icon {
+    width: 100%;
+}
+.menuTopIcons .app-navbar-icon img {
+    width: 75%;
+    position: relative;
+    top: 20px;
+    left: 5px;
+}
+.menuTopIcons span {
+    position: relative;
+    top: 50px;
+    font-size: 13px;
+    position: relative;
+    left: 6px;
+}
+
+
+
+/* main */
+.main {
+    display: flex;
+    justify-content: center;
+}
+.main-section {
+    width: 67%;
+    display: flex;
+    justify-content: center;
+}
+
+.overall-profit {
+    width: 100%;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5rem solid #ffc117;
+    border-radius: 10px;
+}
+.deposit-terms {
+    width: 40%;
+    text-align: center; 
+}
+
+
+.input-deposit {
+    border-radius: 10px;
+    width: 50%;
+}
+.input-deposit .uploading-form {
+    display: grid;
+    justify-content: center;
+}
+.input-deposit .uploading-form label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: left;
+    width: 100%;
+    margin-top: 13px;
+    
+}
+.input-deposit .uploading-form input {
+   
+    width: 100%;
+    height: 35px;
+    margin: 0;
+    padding: 0.5rem 0.5rem;
+    color: #272626ca;
+    background-color: #fff;
+    border: 1px solid #adadad;
+    border-radius: 8px;
+    font-size: 14px;
+    max-width: 95%;
+    margin-top: 5px;
+}
+.input-deposit .uploading-form .copy-clipboard {
+    position: relative;
+    bottom: 43px;
+    margin-bottom: -57px;
+    cursor: pointer;
+}
+.input-deposit .uploading-form .app-search-icon {
+    height: 30px;
+    position: relative;
+    left: 295px;
+    opacity: 61%;
+}
+#message {
+    position: relative;
+    left: 261px;
+    bottom: 76px;
+    display: grid;
+    width: 70px;
+    height: 24px;
+    border-radius: 20px;
+    color: rgb(25, 87, 137);
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.input-deposit .uploading-form .btn-submit {
+    background-color: #001a50;
+    width: 80%;
+    display: flex;
+    height: 50px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 1rem rgb(0 0 0 / 25%);
+    color: #fff;
+    text-decoration: none;
+    justify-content: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-left: 38px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+.image-style {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #adadad;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+.input-deposit #file {
+    border: none;
+}
+#preview img {
+    display: block;
+    width: 100%;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    justify-content: center;
+}
+.footer .footer-container {
+    display: flex;
+    justify-content: center;
+    width: 67%;
+    position: absolute;
+    
+}
+.text-footer {
+    font-size: 1.1rem;
+    color: #c7990e;
+    text-align: center;
+    position: relative;
+    float: left;
+    padding: 0 10px;
+
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.footer span {
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+@media (max-width:500px) {
+    .header-container {
+        display: block;
+    }
+    .header-container .app-logo {
+        width: 190px;
+        margin-left: -28px;
+    }
+    .header-container .app-search {
+        width: 100%;
+        left: -85px;
+    }
+    .header-container .app-search .copy-clipboard {
+        left: 75px;
+    }
+    .userName {
+        display: flex;
+        position: absolute;
+        width: 87px;
+        left: 107%;
+        bottom: 56px;   
+    }
+    /* .header-container .app-search .app-search-icon {
+       left: 330px;
+    } */
+    .header-container .app-search input {
+        margin-left: 64px;
+    }
+    .header-container .profile {
+        position: absolute;
+        right: 10px;
+    }
+
+    /* navbar */
+    .main-container {
+        padding-top: 40px;
+    }
+    .app-main-container {
+        width: 100%;
+        overflow-x: auto;
+        height: 109px;
+    }
+    .menuTopIcons {
+        width: 600px;
+        padding-left: 2px;
+    }
+    .menuTopIcons li {
+        width: 60px;
+        height: 60px;
+    }
+    .menuTopIcons span {
+        top: 33px;
+        left: 0;
+    }
+    .menuTopIcons .deposit {
+        top: 37px;
+    }
+    .menuTopIcons .withdraw{
+        top: 25px;
+    }
+    .menuTopIcons  .about{
+        top: 25px;
+    }
+    .menuTopIcons .app-navbar-icon img {
+        top: 12px;
+        left: 0;
+    }
+
+    /* main  */
+    .main-section {
+        
+        width: 100%;
+    }
+    .main-section .overall-profit {
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        background-color: #f1f1f1;
+        border-radius: 10px;
+    }
+    .main-section .overall-profit .deposit-terms {
+        width: 100%;
+        border-bottom: none;
+    }
+    .main-section .overall-profit .input-deposit {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .main-section .overall-profit .uploading-form {
+        width: 100%;
+    }
+    .main-section .overall-profit .uploading-form input {
+        height: 40px;
+    }
+    .main-section .overall-profit .uploading-form .app-search-icon {
+        left: 298px;
+    }
+
+    /* footer */
+    .footer .footer-container .text-footer {
+        font-size: 1rem;
+    }
+    .footer .footer-container span {
+        font-size: 1rem;
+    }
+}

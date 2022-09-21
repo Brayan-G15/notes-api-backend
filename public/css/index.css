@@ -1,0 +1,541 @@
+:root {
+    --purple-light-1: #FBFAFB;
+    --font-family-titles: 'Dosis', sans-serif;
+    --font-family-text: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-color: #010f24;
+    font-family: var(--font-family-titles);
+}
+
+.container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+
+.header-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.header-container .app-search .copy-clipboard {
+    position: relative;
+    bottom: 43px;
+    cursor: pointer;
+    width: 112%;
+    display: flex;
+    height: 40px;
+
+}
+.header-container .app-search .app-search-icon {
+    height: 30px;
+    position: relative;
+    left: 94%;
+    top: 25%;
+    opacity: 65%;
+}
+#message {
+    position: relative;
+    left: 79%;
+    bottom: 20px;
+    display: grid;
+    width: 70px;
+    height: 24px;
+    border-radius: 20px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.userName {
+    display: flex;
+    position: absolute;
+    width: 87px;
+    right: -40%;
+    bottom: -7px;
+}
+
+.badge{
+    color: #FBFAFB;
+    font-weight: 900;
+}
+
+.app-logo{
+    width: 20%;
+}
+
+.desktop-menu{
+    position: relative;
+    margin-top: 26px;
+}
+
+.btn-logout{
+    text-decoration: none;
+    background-color: #b38b12;
+    color: #001a50;
+    border-radius: 10px;
+    width: 63px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.container .app-search{
+    width: 45%;
+    height: 25px;
+    position: relative;
+    top: 25px;
+    right: 90px;
+}
+
+.container .app-search input {
+    border: none;
+    border-radius: 0.75rem;
+    font-weight: 500;
+    font-size: inherit;
+    padding: 0.5rem 1rem;
+    padding-right: 2.5rem;
+    width: 100%;
+    height: 100%;
+    color: #272626ca;
+    background-color: #c2c9d6;
+}
+
+.container .app-search-icon {
+    height: 30px;
+    position: absolute;
+    right: -48px;
+    top:25%;
+    opacity: 61%;
+}
+.profile {
+   width: 55px;
+   height: 55px;
+   position: relative;
+   top: 22px;
+    
+}
+
+
+
+
+
+/* menu top icon */
+.app-main-container {
+    width: 80%;
+    
+}
+.app-navbar {
+    width: 100%;
+}
+.menuTopIcons {
+    display:  flex;
+    justify-content: space-evenly; 
+    margin-right: 35px;
+} 
+.menuTopIcons li {
+    width: 80px;
+    height: 80px;
+    background-color: #FBFAFB;
+    border-radius: 10px;
+    list-style: none;
+}
+.menuTopIcons a {
+    align-items: center; 
+    display: flex;
+    color: #FBFAFB;
+    font-size: 0.625rem;
+    font-weight: 500;
+    flex-direction: column;
+    max-width: 4.25rem;
+    text-align: center;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+.menuTopIcons .nft  {
+    align-items: center; 
+    display: flex;
+    color: #FBFAFB;
+    font-size: 0.625rem;
+    font-weight: 500;
+    flex-direction: column;
+   
+    text-align: center;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+.menuTopIcons .app-navbar-icon {
+    width: 100%;
+}
+.menuTopIcons .app-navbar-icon img {
+    width: 75%;
+    position: relative;
+    top: 20px;
+    left: 5px;
+}
+.menuTopIcons span {
+    position: relative;
+    top: 50px;
+    font-size: 13px;
+    position: relative;
+    left: 6px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.app-slider {
+    background-color: #003259;
+    background-image: url(/img/background3.webp);
+    width: 67%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    color: #FBFAFB;
+    border-bottom: 0.5rem solid #ffc117;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+    width: 67%;
+}
+.main-section span {
+    font-weight: 400;
+    color: #21456c;
+}
+.main-section .overall-profit .benefits span {
+    position: relative;
+    bottom: 9px;
+    left: 9px;
+}
+
+.overall-profit {
+    background-color: var(--purple-light-1);
+    width: 350px;
+    height: 160px;
+    border-radius: 20px;
+    border-bottom: 0.5rem solid #ffc117;
+    background-color: #dee3ed;
+}
+.overall-profit h2 {
+    display: flex;
+    margin-left: 30px;
+    margin-top: 38px;
+}
+
+.benefits {
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+}
+.main .main-section .overall-profit .benefits img {
+    width: 40px;
+    height: 40px;
+}
+.main .main-section .overall-profit .benefits .img-btc {
+    position: relative;
+}
+.main .main-section .overall-profit .benefits .saldoRetiro {
+    position: relative;
+    left: 15px;
+    width: 135px;
+    font-size: 20px;
+}
+.main .main-section .overall-profit .benefits .img-wallet {
+    position: relative;
+    left: 13px;
+}
+.active-contracts {
+    background-color: var(--purple-light-1);
+    width: 400px;
+    height: 160px;
+    border-radius: 20px;
+    border-bottom: 0.5rem solid #ffc117;
+    background-color: #dee3ed;
+}
+.active-contracts .investment {
+    display: flex;
+    justify-content: space-evenly;
+}
+.active-contracts .investment img {
+    height: 87px;
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.active-contracts span {
+    position: relative;
+    top: 40px;
+    font-size: 23px;
+    margin-left: -56px;
+}
+.active-contracts .btn {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+}
+.active-contracts a {
+    background-color: #001a50;
+    width: 80%;
+    display: flex;
+    height: 100%;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 1rem rgb(0 0 0 / 25%);
+    color: #fff;
+    text-decoration: none;
+    justify-content: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+.footer .support {
+    display: flex;
+}
+.footer .support p{
+    margin-left: 5px;
+    color: #fff;
+    margin-top: 21px;
+}
+.footer .support .support-email {
+    color: #c7990e;
+}
+/* .footer .footer-container {
+    display: flex;
+    justify-content: center;
+    width: 67%;
+    position: absolute;
+    bottom: -48px;
+} */
+.text-footer {
+    font-size: 1.1rem;
+    color: #c7990e;
+    text-align: center;
+    position: relative;
+    float: left;
+    padding: 0 10px;
+
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.footer span {
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media (max-width:500px) {
+    .header-container {
+        display: block;
+    }
+    .header-container .app-logo {
+        width: 163px;
+        margin-left: -28px;
+    }
+    .header-container .app-search {
+        width: 100%;
+    }
+    .header-container .app-search .app-search-icon {
+        left: 92%;
+    }
+    .header-container .app-search input {
+        margin-left: 64px;
+    }
+    .userName {
+        display: flex;
+        position: absolute;
+        justify-content: flex-end;
+        width: 87px;
+        left: 57%;
+        bottom: 70px;   
+        font-size: 14px;
+    }
+    .btn-logout{
+        position: relative;
+        left: 7px;
+    }
+    .header-container .app-search .copy-clipboard {
+        left: 68px;
+        width: 116%;
+    } 
+    #message{
+        left: 71%;
+    }
+    .desktop-menu {
+        position: relative;
+        bottom: 100px;
+        left: 88%;
+        width: 20px;
+    }
+    /* .header-container .profile {
+        position: absolute;
+        right: 10px;
+    } */
+
+    
+    /* navbar */
+    .main-container {
+        padding-top: 40px;
+    }
+    .app-main-container {
+        width: 100%;
+        overflow-x: auto;
+        height: 109px;
+    }
+    .menuTopIcons {
+        width: 600px;
+        padding-left: 2px;
+    }
+    .menuTopIcons li {
+        width: 60px;
+        height: 60px;
+    }
+    .menuTopIcons span {
+        top: 33px;
+        left: 0;
+    
+    }
+    .menuTopIcons .deposit {
+        top: 37px;
+    }
+    .menuTopIcons .withdraw{
+        top: 25px;
+    }
+    .menuTopIcons  .about{
+        top: 25px;
+    }
+
+
+    .app-slider {
+        width: 95%;
+        height: 150px;
+        margin-top: -25px;
+    }
+    .menuTopIcons .app-navbar-icon img {
+        top: 12px;
+        left: 0;
+    }
+
+
+    /* main */
+    .main .main-section {
+        display: block;
+        width: 100%;
+        justify-content: center;
+        padding-left: 20px;
+    }
+    .main .main-section .overall-profit{
+        width: 95%;
+        height: 100px;
+        margin-bottom: 10px;
+        
+    }
+    .main .main-section .overall-profit h2 {
+        font-size: 20px;
+        padding-top: 12px;
+    }
+    .main .main-section .overall-profit .img-btc {
+        margin-left: 8px;
+        width: 33px;
+        height: 33px;
+    }
+    .main .main-section .overall-profit .img-wallet {
+        width: 33px;
+        height: 33px;
+        margin-left: 48px;
+    }
+    .main-section .overall-profit .benefits {
+        margin-top: 0;
+        margin-right: 0;
+    }
+    .main-section .overall-profit .benefits span {
+        font-size: 22px;
+        margin-top: 5px;
+        position: relative;
+        top: -15px;
+    }
+    
+
+    .main .main-section .active-contracts {
+        width: 95%;
+    }
+    .main .main-section .active-contracts .saldoDeposito {
+        position: relative;
+        font-size: 23px;
+    }
+
+    /* footer */
+    .footer{
+        display: grid;
+        justify-content: center;
+        font-size: 17px;
+    }
+    .footer .footer-container {
+        width: 100%;
+        font-size: 1rem;
+        bottom: 0;
+    }
+    .footer .footer-container .text-footer {
+        margin-bottom: -4px;
+        font-size: 17px;
+    }
+    .footer .support {
+        justify-content: center;
+    }
+}
+
+
+@media (max-height: 700px){
+    .footer .footer-container {
+        bottom: -166px;
+    }
+}
