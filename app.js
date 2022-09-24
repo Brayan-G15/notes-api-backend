@@ -1,7 +1,8 @@
 //Invocamos variables express, dotenv, cookie-parser
-const express = require("express");
-const dotenv = require("dotenv");
-const cookieParser = require("cookie-parser");
+import express from  'express'
+import dotenv from 'dotenv'
+import cookieParser from 'cookie-parser';
+import router from './routes/router.js';
 
 const app = express();
 
@@ -22,7 +23,7 @@ dotenv.config({path: "./env/.env"});
 app.use(cookieParser());
 
 //Llamar al router
-app.use("/", require("./routes/router"))
+app.use("/", router)
 
 //Para eliminar la cache
 app.use(function(req,res, next){
@@ -31,7 +32,7 @@ app.use(function(req,res, next){
     next();
 })
 
-const PORT = process.env.PORT || 3002
+const PORT = process.env.PORT || 7280
 app.listen(PORT, ()=>{
     console.log(`SERVER UP running in ${PORT}`);
 })

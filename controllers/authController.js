@@ -1,10 +1,12 @@
-const jwt = require("jsonwebtoken");
-const bcryptjs = require("bcryptjs");
-const conection = require("../database/db");
-const {promisify} = require("util");
+import pkg from "jsonwebtoken";
+import bcryptjs from "bcryptjs"
+import { conection } from "../src/db.js";
+import { promisify } from "util";
+
+const  jwt = pkg;
 
 //Procedimiento para registrarnos
-exports.register = async (req, res) => {
+export const register = async (req, res) => {
     try {
         const name = req.body.name;
         const user = req.body.user;
@@ -38,7 +40,7 @@ exports.register = async (req, res) => {
 }
 
 //Procedimineto para logearnos
-exports.login = async (req, res) => {
+export const login = async (req, res) => {
     try {
         const user = req.body.user
         const pass = req.body.pass        
@@ -98,7 +100,7 @@ exports.login = async (req, res) => {
     }
 }
 
-exports.isAuthenticated = async (req, res, next)=>{
+export const isAuthenticated = async (req, res, next)=>{
     if (req.cookies.jwt) {
         try {
             const decodificada = await promisify(jwt.verify)(req.cookies.jwt, process.env.JWT_SECRETO)
@@ -116,13 +118,13 @@ exports.isAuthenticated = async (req, res, next)=>{
     }
 }
 
-exports.logout = (req, res)=>{
+export const logout = (req, res)=>{
     res.clearCookie('jwt')   
     return res.redirect('/')
 }
 
 //Metodo para depositos
-exports.deposit = (req, res) =>{
+export const deposit = (req, res) =>{
     try {
         const userDeposit = req.body.userDeposit;
         const txid =req.body.TXID;
@@ -152,7 +154,7 @@ exports.deposit = (req, res) =>{
 }
 
 //metodo para retiros
-exports.withdrawals = (req, res) => {
+export const withdrawals = (req, res) => {
     try {
         const wallet = req.body.wallet;
         const usd = req.body.usdRetiro;
