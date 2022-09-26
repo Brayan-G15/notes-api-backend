@@ -230,7 +230,7 @@ label {
     .footer section {
         display: flex;
         position: absolute;
-        bottom: 707px;
+        bottom: 672px;
         align-items: center;
     }
     .footer figure {
@@ -238,4 +238,11 @@ label {
 
     }
 
+}
+
+@media(max-height:800px){
+
+    .footer section {
+        bottom: 545px;
+    }
 }

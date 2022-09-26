@@ -1,6 +1,8 @@
 import {Router} from 'express'
 const router = Router();
-import {register,login, deposit, withdrawals, isAuthenticated, logout} from '../controllers/authController.js'
+
+import {register,login, deposit, withdrawals, isAuthenticated, logout, guestUser} from '../controllers/authController.js'
+
 
 //router para las vistas
 router.get("/", isAuthenticated, (req, res)=>{
@@ -35,11 +37,16 @@ router.get("/aboutUs", (req, res)=>{
     res.render("aboutUs", {user:req.user})
 })
 
+
+
 //router para los métodos del controller
 router.post('/register', register);
 router.post('/login', login);
 router.get('/logout', logout); // se pone get cuando no expecificamos un action en el archivo ejs
 router.post("/deposit", deposit);
 router.post("/withdraw", withdrawals);
+router.post('/team', guestUser)
+//router.post("/aboutUs", authController.aboutUs);
+//segui realizando este procedimineto para encontrar las rutas faltantes
 
 export default router;

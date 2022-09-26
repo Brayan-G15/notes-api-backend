@@ -181,3 +181,32 @@ export const withdrawals = (req, res) => {
     }
     
 }
+
+//Procedimiento para registrar usuario invitado
+export const guestUser = (req, res) =>{
+    try {
+        const user = req.body.user;
+        const guestUser = req.body.guestUser;
+        
+        console.log(user+" "+ guestUser);
+        conection.query("INSERT INTO guestUsers SET ?", {user:user, guestUser:guestUser}, (error, results) => {
+            if (error) {
+                console.log("el error es: "+ error);
+            }else {
+                res.render('register', {
+                    alert: true,
+                    alertTitle: "Success",
+                    alertMessage: "¡Registered user!",
+                    alertIcon:'success',
+                    showConfirmButton: false,
+                    timer: null,
+                    ruta: ''
+                });
+            }
+
+            //res.redirect("/")
+        })
+    } catch (error) {
+        console.log(error)
+    }
+}
