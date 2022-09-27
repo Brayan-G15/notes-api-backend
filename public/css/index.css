@@ -517,7 +517,7 @@ header {
     .footer{
         display: grid;
         justify-content: center;
-        font-size: 17px;
+        font-size: 15px;
     }
     .footer .footer-container {
         width: 100%;
@@ -526,7 +526,10 @@ header {
     }
     .footer .footer-container .text-footer {
         margin-bottom: -4px;
-        font-size: 17px;
+        font-size: 15px;
+    }
+    .footer .footer-container .text-footer span {
+        font-size: 15px;
     }
     .footer .support {
         justify-content: center;
