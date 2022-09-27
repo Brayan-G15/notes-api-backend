@@ -352,7 +352,7 @@ body {
         height: 109px;
     }
     .menuTopIcons {
-        width: 600px;
+        width: 500px;
         padding-left: 2px;
     }
     .menuTopIcons li {
@@ -392,6 +392,10 @@ body {
     .main-section .overall-profit .deposit-terms {
         width: 100%;
         border-bottom: none;
+        text-align: initial;
+    }
+    .main-section .overall-profit .deposit-terms h2 {
+        color: rgb(17 116 163);
     }
     .main-section .overall-profit .input-deposit {
         width: 100%;
