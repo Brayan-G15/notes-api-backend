@@ -228,6 +228,9 @@ label {
     .footer{
         justify-content: center;
     }
+    .footer .text-footer {
+        display: none;
+    }
     .footer section {
         display: flex;
         position: absolute;
